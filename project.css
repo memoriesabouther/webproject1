@@ -1,0 +1,189 @@
+.animate-bottom{
+    display: grid;
+    gap: 10px;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: 200px 600px 100px;
+    grid-template-rows: 300px 600px 90px;
+    background-color: white;
+    grid-template-areas: 
+    'header header header'
+    ' content content left'
+    'footer footer footer';
+    height: 200px;
+}
+
+
+
+.item1 {
+  
+    grid-area: header;
+    
+}
+.text1 {
+    font-size: 20px;
+    font-style:;
+}
+.item2 {
+    grid-area: left;
+}
+.item3 {
+    grid-area: content;
+    
+}
+.item4 {
+    grid-area: right;
+    background-color: #3498db;
+    color: #3498db;
+
+}
+.item4 {
+    grid-area: footer;
+    background-color: aquamarine;
+}
+.price {
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+}
+.oldprice {
+    display: inline;
+    text-decoration: line-through;
+}
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
+  .container1 {
+    border: 1px solid black;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Josenfin Sans',sans-serif;
+}
+.hero{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(https://thegioiaudi.com/wp-content/uploads/2021/09/audi-q7-thumb-1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+nav{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+.logo {
+    color: white;
+    size: 28;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+     padding: 10px 20px;
+
+}
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+
+}
+nav ul li a:hover{
+    color:#ea1538;
+    transition: .3s;
+}
+.text {
+  font-size: large;
+  
+}
+/* shopng cart */
+
+
+.icon {
+  display: inline;
+  color: white;
+
+}
+.icon :hover{
+  color:#ea1538;
+  transition: .3s;
+}
+.add-to-cart-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #666;
+  
+}
+.linkproduct{
+  text-decoration: none;
+  
+}
+.title{
+  text-align: left;
+}
+.add-to-cart-button:hover {
+  background-color: #666;
+}
+
+
+
